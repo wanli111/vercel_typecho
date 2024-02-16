@@ -6,8 +6,8 @@
  * @license    GNU General Public License 2.0
  * @version    $Id$
  */
- 
-/** 开启https */ 
+
+/** 开启https */
 define('__TYPECHO_SECURE__',true);
 
 /** 定义根目录 */
@@ -36,12 +36,12 @@ Typecho_Common::init();
 /** 定义数据库参数 */
 $db = new Typecho_Db('Pdo_Mysql', 'typecho_');
 $db->addServer(array (
-  'host' => '数据库地址',
-  'user' => '数据库用户',
-  'password' => '数据库密码',
+  'host' => 'pro.freedb.tech',
+  'user' => 'Dummy用户名3',
+  'password' => 'DummyUsernamePassword3',
   'charset' => 'utf8mb4',
   'port' => '3306',
-  'database' => '数据库名',
+  'database' => '虚拟数据库3',
   'engine' => 'MyISAM',
 ), Typecho_Db::READ | Typecho_Db::WRITE);
 Typecho_Db::set($db);
