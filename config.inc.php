@@ -37,11 +37,11 @@ Typecho_Common::init();
 $db = new Typecho_Db('Pdo_Mysql', 'typecho_');
 $db->addServer(array (
   'host' => 'pro.freedb.tech',
-  'user' => 'Dummy用户名3',
+  'user' => 'DummyUsername3',
   'password' => 'DummyUsernamePassword3',
   'charset' => 'utf8mb4',
   'port' => '3306',
-  'database' => '虚拟数据库3',
+  'database' => 'DummyDatabase3',
   'engine' => 'MyISAM',
 ), Typecho_Db::READ | Typecho_Db::WRITE);
 Typecho_Db::set($db);
