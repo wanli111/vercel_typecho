@@ -6,9 +6,9 @@
  * @license    GNU General Public License 2.0
  * @version    $Id$
  */
-
-/** 开启https */
-define('__TYPECHO_SECURE__',true);
+ 
+ 
+ define('__TYPECHO_SECURE__',true);
 
 /** 定义根目录 */
 define('__TYPECHO_ROOT_DIR__', dirname(__FILE__));
@@ -37,11 +37,14 @@ Typecho_Common::init();
 $db = new Typecho_Db('Pdo_Mysql', 'typecho_');
 $db->addServer(array (
   'host' => 'pro.freedb.tech',
-  'user' => 'DummyUsername3',
-  'password' => 'DummyUsernamePassword3',
-  'charset' => 'utf8mb4',
+  'user' => 'DummyUsername2',
+  'password' => 'DummyUsernamePassword2',
+  'charset' => 'utf8',
   'port' => '3306',
-  'database' => 'DummyDatabase3',
+  'database' => 'DummyDatabase2',
   'engine' => 'MyISAM',
 ), Typecho_Db::READ | Typecho_Db::WRITE);
 Typecho_Db::set($db);
+
+/** 开启HTTPS */
+define('__TYPECHO_SECURE__',true);
